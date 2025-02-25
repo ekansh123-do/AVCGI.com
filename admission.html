@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVCGI Institute - Admission Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(90deg, #1a1a2e, #16213e);
+            color: #e0e0e0;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .form-container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: none;
+            font-size: 1em;
+        }
+        .submit-button {
+            background: #00d4ff;
+            color: #1a1a2e;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 1em;
+            border-radius: 20px;
+            transition: background 0.3s, transform 0.2s ease-in-out;
+            border: none;
+            cursor: pointer;
+            display: block;
+            margin-top: 10px;
+            width: 100%;
+        }
+        .submit-button:hover {
+            background: #009ec3;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Admission Form</h1>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            
+            <label for="address">Address:</label>
+            <input type="text" id="address" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            
+            <label for="age">Age:</label>
+            <input type="number" id="age" required>
+            
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" required>
+            
+            <label for="contact">Contact:</label>
+            <input type="text" id="contact" required>
+            
+            <label for="aadhar">Aadhar Card Number:</label>
+            <input type="text" id="aadhar" required>
+            
+            <label for="father">Father's Name:</label>
+            <input type="text" id="father" required>
+            
+            <label for="mother">Mother's Name:</label>
+            <input type="text" id="mother" required>
+            
+            <label for="caste">Caste:</label>
+            <input type="text" id="caste" required>
+            
+            <label for="photo">Upload Image:</label>
+            <input type="file" id="photo" required>
+            
+            <label for="marksheet">Upload Last Class Marksheet:</label>
+            <input type="file" id="marksheet" required>
+            
+            <label for="course">Select Course:</label>
+            <select id="course" required>
+                <option value="" disabled selected>Select a course</option>
+                <option value="ADCA">ADCA</option>
+                <option value="ADIT">ADIT</option>
+                <option value="ADCHN">ADCHN</option>
+                <option value="ADCP">ADCP</option>
+                <option value="HONOURS">HONOURS</option>
+                <option value="DOAP">DOAP</option>
+                <option value="CCC">CCC</option>
+                <option value="O Level">O Level</option>
+                <option value="Oracle">Oracle</option>
+                <option value="ADCA + ADCHN">ADCA + ADCHN</option>
+                <option value="ADCA + ADIT">ADCA + ADIT</option>
+                <option value="ADCA + ADIT + ADCHN">ADCA + ADIT + ADCHN</option>
+                <option value="DOAP + ADCHN">DOAP + ADCHN</option>
+                <option value="ADCA + ADCP">ADCA + ADCP</option>
+                <option value="ADIT + ADCHN">ADIT + ADCHN</option>
+                <option value="ADCA + DOAP">ADCA + DOAP</option>
+                <option value="ADCA + CCC">ADCA + CCC</option>
+                <option value="ADCA + O Level">ADCA + O Level</option>
+                <option value="ADIT + Oracle">ADIT + Oracle</option>
+                <option value="ADCA + ADIT + ADCP">ADCA + ADIT + ADCP</option>
+                <option value="ADCA + ADIT + ADCHN + ADCP">ADCA + ADIT + ADCHN + ADCP</option>
+            </select>
+            
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+    </div>
+</body>
+</html>  add in this too
+
